@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <div class="col-s-5">  <img src="pic/logo.png" id="logo"  style="float: left; "/></div> 
+    <a href="index.html"   style="margin-top: 0.8%;font-size: 15px;"> <b>St. Theresa College <br>of Tandag, Inc.</b></a>
+    
+    <a href="index.html" style="text-align: center; margin: 1%; font-size: 24px;">Home</a>
+    <a href="gallery.html" style="text-align: center; margin: 1%;font-size: 24px;">Gallery</a>
+    <a href="page6.html" style="text-align: center; margin: 1%;font-size: 24px;">Contact</a>
+    <a href="page5.html" style="text-align: center; margin: 1%;font-size: 24px;">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+      
+    
+    
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+  
+
+
+<div class="container1" >
+  <h1>Contact Form</h1>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Email Address</label>
+    <input type="text" id="email" name="email" placeholder="Your email address..">
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+  <a href="index.html"><input type="submit" value="Submit"></a>  
+  </form>
+</div>
+
+</body>
+</html>
